@@ -2,7 +2,7 @@
   "name": "zenbit_test_proj",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Natalia2715.github.io/zenbit_test_proj/",
+  "homepage": "https://Natalia2715/zenbit_test_proj/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.16.3",
