@@ -40,7 +40,7 @@ export const YellowSmile = styled.div`
   left: 18px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(${smileYellow});
+  background-image: url(${smileYellowBig});
   @media ${p => p.theme.media.tablet} {
     width: 70px;
     height: 70px;
@@ -56,17 +56,20 @@ export const YellowSmile = styled.div`
 export const Globe = styled.div`
   background-image: none;
   @media ${p => p.theme.media.tablet} {
-    position: fixed;
+    left: auto;
+    right: 0px;
+    position: absolute;
     top: 0px;
-    right: -297px;
-    width: 920px;
-    height: 920px;
-    background-size: contain;
+    width: 410px;
+    height: 610px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(${bgdImgGlobe});
   }
   @media ${p => p.theme.media.desktop} {
-    right: -316px;
+    
+    height: 920px;
+    
   }
 `;
 
@@ -79,7 +82,7 @@ export const PinkSmile = styled.div`
     background-repeat: no-repeat;
     z-index: 5;
     top: 558px;
-    right: 355px;
+    right: 150px;
     width: 290px;
     height: 290px;
   }
@@ -89,12 +92,12 @@ export const BigYellowSmile = styled.div`
   position: absolute;
   background-image: none;
   @media ${p => p.theme.media.desktop} {
-    background-image: url(${smileYellowBig});
+    background-image: url(${smileYellow});
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 6;
     top: 515px;
-    right: 520px;
+    right: 312px;
     width: 127px;
     height: 127px;
   }

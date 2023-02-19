@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-// import font from '../fonts/ApercuArabicPro-Regular.woff2';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {

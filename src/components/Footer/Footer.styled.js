@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import smileRed from '../../images/red_smile1.png';
 import smileGreen from '../../images/smile_green.png';
-import smileYellow from '../../images/smile_yellow.png';
+import smileYellow from '../../images/smile_yellow1.png';
 
 export const FooterWrap = styled.footer`
   position: relative;
@@ -9,7 +9,6 @@ export const FooterWrap = styled.footer`
   height: 100px;
   width: 100%;
   background-color: ${p => p.theme.colors.footer};
-  position: fixed;
   bottom: 0;
   border: 1px solid #d8d8d8;
   @media ${p => p.theme.media.desktop} {
@@ -19,22 +18,31 @@ export const FooterWrap = styled.footer`
 
 export const PinkSmile = styled.div`
   position: absolute;
-  width: 135px;
-  height: 135px;
-  top: -8px;
+  width: 180px;
+  height: 119px;
+  top: -22px;
   left: -10px;
-  background-size: contain;
+  background-size: cover;
+  background-position: top;
+  background-origin: content-box;
   background-repeat: no-repeat;
-  background-image: url(${smileRed});
+  
   @media ${p => p.theme.media.tablet} {
     width: 135px;
     height: 135px;
+    background-image: url(${smileRed});
+    top: -12px;
+    bottom: -32px;
+    left: 20px;
+    width: 160px;
+    height: 114px;
   }
   @media ${p => p.theme.media.desktop} {
-    top: -38px;
+    top: -32px;
+    bottom: -32px;
     left: 20px;
-    width: 290px;
-    height: 290px;
+    width: 280px;
+    height: 230px;
   }
 `;
 
@@ -87,13 +95,16 @@ export const SocialIconsItem = styled.svg`
 
 export const MiniYellow = styled.div`
   position: absolute;
-  background-size: contain;
+  background-size: cover;
+  background-position: left;
+  background-origin: content-box;
   background-repeat: no-repeat;
   background-image: url(${smileYellow});
   @media ${p => p.theme.media.desktop} {
     top: 65px;
-    right: -35px;
-    width: 128px;
+    left:auto;
+    right: 0;
+    width: 100px;
     height: 128px;
   }
 `;
