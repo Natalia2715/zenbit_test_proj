@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const BASE_URL = 'localhost:3030';
+const BASE_URL = 'https://feedback-api-fs2w.onrender.com';
 
 export const feedbackApi = createApi({
   reducerPath: 'feedbackApi',
@@ -12,7 +12,7 @@ export const feedbackApi = createApi({
   endpoints: builder => ({
     createFeedback: builder.mutation({
       query: data => ({
-        url: '/feedback',
+        url: 'api/feedbacks',
         method: 'POST',
         body: data,
       }),
